@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculette</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class = "calculette"> 
+
+    <table>
+        <tr>
+            <td class = "titre" colspan="4">Calculette Super-Sonic</td>
+        </tr>
+        <tr>
+            <td class ="ecran" colspan="3"> <span class="operation" id="operation"></span><h2 class="resultat" id="resultat"></h2> </div></td>
+            <td class="reset" id="cancel" onclick="reset()">C</td>
+        </tr>
+        <tr>
+            <td class="touche" id="7" onclick="ajoutNb(7)">7</td>
+            <td class="touche" id="8" onclick="ajoutNb(8)">8</td>
+            <td class="touche" id="9" onclick="ajoutNb(9)" >9</td>
+            <td class="touche operateur" id="-" onClick="ajoutNb('-')">-</td>
+        </tr>
+        <tr>
+            <td class="touche" id="4" onclick="ajoutNb(4)">4</td>
+            <td class="touche" id="5" onclick="ajoutNb(5)">5</td>
+            <td class="touche" id="6" onclick="ajoutNb(6)">6</td>
+            <td class="touche operateur" id="plus" onClick="ajoutNb('+')">+</td>
+        </tr>
+        <tr>
+            <td class="touche" id="1" onclick="ajoutNb(1)">1</td>
+            <td class="touche" id="2" onclick="ajoutNb(2)">2</td>
+            <td class="touche" id="3" onclick="ajoutNb(3)">3</td>
+            <td class="touche operateur" id="diviser" onClick="ajoutNb('/')">/</td>
+        </tr>
+        <tr>
+           
+            <td class="touche" id="0" onclick="ajoutNb(0)"> 0 </td>
+            <td class="touche" id="point" onclick="ajoutNb('.')">.</td>
+            <td class="touche egal" id="egal" onclick="egal()">=</td>
+            <td class="touche operateur" id="multiplier" onClick="ajoutNb('*')">x</td>
+        </tr>
+    </table>
+
+</div>
+
+    
+<script type="text/javascript" language="JavaScript" src="script.js"></script>
+</body>
+</html>
